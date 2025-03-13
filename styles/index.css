@@ -4,34 +4,23 @@
 	--color-primary: #87cbb9;
 	--color-secondary: #f4e285;
 	--color-accent: #ffb997;
-	--color-dark: #2e4052;
 	--color-light: #faf3dd;
-  --color-text: #ebebeb;
-  --color-body:#004857;
+	--color-text: #ebebeb;
+	--color-header: #004857;
 
-  --color-glass: #ffffff20;
-  --color-border-glass:#ffffff4d;
+	--color-glass: #ffffff20;
+	--color-border-glass: #ffffff4d;
 }
 
 body {
-	background-color: var(--color-body);
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
+	font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: var(--color-text);
 }
 
-/* :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+.img-grid {
+	@apply w-full rounded-lg aspect-video object-cover h-full;
+}
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-} */
+.card {
+  @apply bg-accent p-3.5 w-52 rounded-lg text-center shadow-lg;
+}
